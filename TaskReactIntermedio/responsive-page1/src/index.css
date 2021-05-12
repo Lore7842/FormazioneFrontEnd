@@ -1,0 +1,206 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.arrow-right:hover{
+  color: rgb(0, 26, 255) !important;
+  
+} 
+.arrow-right{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: black;
+  box-sizing: border-box;
+
+  width: 20px;
+  height: 20px;
+  border-width: 4px 4px 0 0;
+  border-style: solid;
+  margin: 10px;
+  transform: rotate(45deg);
+}
+
+.arrow-right::before, .arrow-right::after{
+  content: "";
+  box-sizing: border-box;
+}
+
+.arrow-right::before{
+    right: 0;
+    top: -3px;
+    position: absolute;
+    height: 4px;
+    box-shadow: inset 0 0 0 32px;
+    transform: rotate(-45deg);
+    width: 23px;
+    transform-origin: right top;
+}
+
+
+.green-circle{
+  height: 25px;
+  width: 25px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.logo{
+  /* favicon 1 */
+
+  position: absolute;
+  width: 50px;
+  height: 50px;
+
+background: url(./assets/circles.svg);
+
+}
+
+.join-button{
+  background: url(./assets/button.svg);
+  width: 110px;
+  height: 38px;
+  position: absolute;
+  left: 576px;
+  top: 599.5px;
+}
+
+.left-image{
+  position: absolute;
+  width: 612px;
+  height: 467px;
+  left: 775px;
+  top: 217px;
+  background: url(./assets/leftI.svg);
+}
+
+footer{
+  position: absolute;
+  width: 1440px;
+  height: 101px;
+  right: 0px;
+  bottom: 0px;
+  background: url(./assets/footer.svg);
+}
+
+.IRAC{
+  /* #IORESTOACASA */
+
+position: absolute;
+width: 170px;
+height: 25px;
+left: 70px;
+top: 10px;
+
+font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 25px;
+
+
+}
+
+mark{
+  color: #1AA29C;
+  background-color: white;
+}
+
+.left-caption{
+  width: 527px;
+  height: 77px;
+  position: absolute;
+  left: 71px;
+  top: 330px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 77px;
+  }
+
+.left-minor-caption{
+  width: 524px;
+  height: 70px;
+  position: absolute;
+  left: 74px;
+  top: 366.5px;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  padding-top: 40px;
+}
+
+.text-box-major{
+    position: absolute;
+    left: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 46px;
+}
+
+.box-people-joined{
+    padding-top: 25px;
+    left: 74px;
+    top: 470px;
+    position: absolute;
+    width: 611px;
+    height: 86px;
+    box-shadow: 5px 10px 24px rgba(26, 162, 156, 0.24);
+    border-radius: 14px;
+}
+
+.sub-caption{
+    display: inline;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 25px;
+}
+
+.progress-container {
+  height: 0.4rem;
+  width: 32rem;
+  border-radius: 0.4rem;
+
+  background: rgb(98, 98, 98);
+}
+
+.progress-container .progress {
+  height: 100%;
+  width: 0;
+  border-radius: 0.4rem;
+
+  background: #1AA29C;
+
+  transition: width 0.4s ease;
+}
+
+.WhoWeAre{
+  display: flex;
+  width: 300px;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  position: absolute;
+  left: 1289px;
+  top: 30px;
+}
+
+.Contact-US{
+  padding-left: 70px;
+}
