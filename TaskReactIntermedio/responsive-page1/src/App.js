@@ -36,7 +36,7 @@ function LeftContainer(props){
       <div className="left-caption">Restiamo a <mark>casa</mark>.</div>
       <div className="left-minor-caption">{props.minCaption}</div>
       <div className="box-people-joined"><div className="text-box-major">{props.count} <div className="sub-caption">persone si 
-      sono fatte avanti</div> <div className="progress-container"><div className="progress"></div></div></div></div>
+      sono fatte avanti</div> <div className="progress-container"><div className="progress"></div></div></div><div className="reachTo">Ancora {5000-props.count}</div></div>
     </div>
   )
 }
@@ -62,7 +62,7 @@ function App() {
       <Text></Text>
       <Logo></Logo>
       <LeftI></LeftI>
-      <LeftContainer count={count} setCount = {setCount} initialValue="1000" minCaption="È arrivato il 
+      <LeftContainer count={count} setCount = {setCount} minCaption="È arrivato il 
       momento di adottare un comportamento 
       responsabile e farsi carico dei propri doveri 
       come cittadino e come individuo." ></LeftContainer>
