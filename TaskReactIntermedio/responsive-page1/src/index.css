@@ -116,6 +116,43 @@ mark{
     border-radius: 14px;
 }
 
+@media screen and (max-width: 375px) {
+  .left-image .Contact-US .WhoWeAre{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1194px){
+  .left-image{
+    background: url(./assets/residez-image.svg);
+    width: 468px;
+    height: 400px;
+  }
+  .box-people-joined{
+    padding-top: 50.7px;
+    position: absolute;
+    height: 111px;
+    width: 606.19px;
+    left: 51px;
+    right: 7.59%;
+    bottom: 309px;
+
+    background: #FFFFFF;
+    box-shadow: 5px 10px 24px rgba(26, 162, 156, 0.24);
+    border-radius: 14px;
+  }
+
+  .join-button{
+    position: absolute;
+    top: 650px;
+    left: 547px;
+    
+    background: url(./assets/button.svg);
+  }
+}
+
+
+
 .sub-caption{
     display: inline;
     font-family: Inter;
@@ -175,3 +212,4 @@ bottom: 10px;
 right: 20px;
 
 }
+
