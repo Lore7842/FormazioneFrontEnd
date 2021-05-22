@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#logo {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+
+  background: url(/src/assets/circles.svg);
+}
+
+#join-button {
+  background: url(/src/assets/button.svg);
+  position: absolute;
+  left: 611px;
+  width: 110px;
+  height: 38px;
+  top: 625px;
+}
+
+#left-image {
+  position: absolute;
+  width: 630px;
+
+  height: 467px;
+  left: 775px;
+  top: 217px;
+  background: url(/src/assets/leftI.svg);
+}
+
+.left-container {
+  display: flex;
+  padding-top: 217.5px;
+  flex-direction: column;
+  justify-content: center;
+  width: 678.19px;
+  height: 362px;
+}
+
+footer {
+  position: absolute;
+  width: 1440px;
+  height: 101px;
+  right: 0px;
+  bottom: 0px;
+  background: url(/src/assets/footer.svg);
+}
+
+#IRAC {
+  /* #IORESTOACASA */
+
+  position: absolute;
+  width: 170px;
+  height: 25px;
+  left: 70px;
+  top: 10px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+mark {
+  color: #1aa29c;
+  background-color: white;
+}
+
+#left-caption {
+  position: relative;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 77px;
+  left: 40px;
+}
+
+#left-minor-caption {
+  position: relative;
+  padding-bottom: 50.7px;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  padding-top: 40px;
+  left: 40px;
+}
+
+#text-box-major {
+  position: relative;
+  left: 25px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 46px;
+}
+
+#box-people-joined {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 111px;
+  padding-top: 25px;
+  order: 10;
+  box-shadow: 5px 10px 24px rgba(26, 162, 156, 0.24);
+  border-radius: 14px;
+  left: 40px;
+}
+
+@media (max-width: 760px) {
+  .left-container {
+    display: flex;
+    padding-top: 217.5px;
+    flex-direction: column;
+    justify-content: center;
+    width: 678.19px;
+    height: 362px;
+  }
+  #left-caption {
+    position: relative;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 77px;
+    left: 40px;
+  }
+  #text-box-major {
+    position: relative;
+    left: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 46px;
+  }
+  #left-image {
+    display: none;
+  }
+  #Menu {
+    display: none;
+  }
+  #box-people-joined {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 111px;
+    padding-top: 25px;
+    order: 10;
+    box-shadow: 5px 10px 24px rgba(26, 162, 156, 0.24);
+    border-radius: 14px;
+    left: 40px;
+  }
+}
+
+@media (max-width: 1194px) {
+  #left-image {
+    background: url(/src/assets/residez-image.svg);
+    width: 468px;
+    height: 400px;
+  }
+  #box-people-joined {
+    padding-top: 50.7px;
+    position: absolute;
+    height: 111px;
+    width: 606.19px;
+    left: 51px;
+    right: 7.59%;
+    bottom: 309px;
+
+    background: #ffffff;
+    box-shadow: 5px 10px 24px rgba(26, 162, 156, 0.24);
+    border-radius: 14px;
+  }
+
+  #join-button {
+    top: 650px;
+    left: 547px;
+
+    background: url(/src/assets/button.svg);
+  }
+}
+
+#sub-caption {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 25px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  padding-bottom: 25px;
+}
+
+.progress-container {
+  height: 0.4rem;
+  width: 32rem;
+  border-radius: 0.4rem;
+
+  background: rgb(98, 98, 98);
+}
+
+.progress-container .progress {
+  height: 100%;
+  width: 0;
+  border-radius: 0.4rem;
+
+  background: #1aa29c;
+
+  transition: width 0.4s ease;
+}
+
+#WhoWeAre {
+  display: flex;
+  width: 300px;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  position: absolute;
+  left: 1620px;
+  top: 30px;
+  right: 0px;
+}
+
+#Contact-US {
+  padding-left: 70px;
+}
+
+#reachTo {
+  position: absolute;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+
+  color: #d3d3d5;
+
+  bottom: 10px;
+  right: 20px;
+}
