@@ -3,15 +3,9 @@ import React from "react"
 function Button(props) {
     console.log(props)
   
-    const endAnimation = () => {
-      props.setAnimationI(0);
-      props.setAnimationT(0);
-    };
-  
     const changePage = () => {
+      props.onClick(1);
       let pageN = props.numPage;
-      props.setAnimationI(1);
-      props.setAnimationT(1);
       if (pageN === 0) {
         props.setPage(1);
       }
@@ -30,7 +24,6 @@ function Button(props) {
       <div
         className="next-button"
         onClick={changePage}
-        onTransitionEnd={endAnimation}
       >
         <div class="text-button">{props.text}</div>
       </div>

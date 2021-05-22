@@ -3,7 +3,7 @@ import Button from "./Button"
 
 function SecondPage(props) {
     return (
-      <div className="container">
+      <div className="container2">
         <div className="text" transition={props.animationT}>
           <div className="title">TRANSITION, FLEX E MOLTO ALTRO</div>
           Dovrai utilizzare flexbox per organizzare i componenti nelle varie
@@ -15,10 +15,7 @@ function SecondPage(props) {
         <Button
           numPage={props.page}
           setPage={props.changePage}
-          animationI={props.animationI}
-          setAnimationI={props.setAnimationI}
-          animationT={props.animationT}
-          setAnimationT={props.setAnimationT}
+          onClick={props.setTraslate}
           text="Avanti"
         ></Button>
       </div>

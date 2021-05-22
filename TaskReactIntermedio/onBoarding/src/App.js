@@ -1,27 +1,18 @@
 import React from "react";
-import FirstPage from "./Components/FirstPage"
-import SecondPage from "./Components/SecondPage"
-import ThirdPage from "./Components/ThirdPage"
-import FourthPage from "./Components/FourthPage"
+import FirstPage from "./Components/FirstPage";
+import SecondPage from "./Components/SecondPage";
+import ThirdPage from "./Components/ThirdPage";
+import FourthPage from "./Components/FourthPage";
 
-
-
-
-function App() {
-  const [page, setPage] = React.useState(0);
-  const [animationT, setAnimationT] = React.useState(0);
-  const [animationI, setAnimationI] = React.useState(0);
-  switch (page) {
+const Pagina = (props) => {
+  switch (props.page) {
     case 0:
       return (
         <div className="App">
           <FirstPage
-            page={page}
-            changePage={setPage}
-            animationI={animationI}
-            setAnimationI={setAnimationI}
-            animationT={animationT}
-            setAnimationT={setAnimationT}
+            page={props.page}
+            changePage={props.setPage}
+            setTraslate={props.setTraslate}
           ></FirstPage>
         </div>
       );
@@ -29,12 +20,9 @@ function App() {
       return (
         <div className="App">
           <SecondPage
-            page={page}
-            changePage={setPage}
-            animationI={animationI}
-            setAnimationI={setAnimationI}
-            animationT={animationT}
-            setAnimationT={setAnimationT}
+            page={props.page}
+            changePage={props.setPage}
+            setTraslate={props.setTraslate}
           ></SecondPage>
         </div>
       );
@@ -42,24 +30,19 @@ function App() {
       return (
         <div className="App">
           <ThirdPage
-            page={page}
-            changePage={setPage}
-            animationI={animationI}
-            setAnimationI={setAnimationI}
-            animationT={animationT}
-            setAnimationT={setAnimationT}
+            page={props.page}
+            changePage={props.setPage}
+            setTraslate={props.setTraslate}
           ></ThirdPage>
         </div>
       );
     case 3:
       return (
         <div className="App">
-          <FourthPage page={page} 
-          changePage={setPage}
-          animationI={animationI}
-          setAnimationI={setAnimationI}
-          animationT={animationT}
-          setAnimationT={setAnimationT}
+          <FourthPage
+            page={props.page}
+            changePage={props.setPage}
+            setTraslate={props.setTraslate}
           ></FourthPage>
         </div>
       );
@@ -70,10 +53,31 @@ function App() {
             color: "red",
             textAlign: "center",
           }}
-        >Impossible to reach!
+        >
+          Impossible to reach!
         </h1>
       );
   }
+};
+
+function App() {
+  const [page, setPage] = React.useState(0);
+  const [Traslation, setTraslate] = React.useState(0);
+
+  return (
+    <div
+      className="bigContainer"
+      Traslation={Traslation}
+      onTransitionEndEnd={() => setTraslate(0)}
+    >
+      <Pagina
+        setPage={setPage}
+        setTraslate={setTraslate}
+        page={page}
+        Traslation={Traslation}
+      />
+    </div>
+  );
 }
 
 export default App;

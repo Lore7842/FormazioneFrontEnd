@@ -5,7 +5,7 @@ function FirstPage(props) {
     console.log(props);
     return (
       <div className="container">
-        <div className="text" transition={props.animationT}>
+        <div className="text">
           <div className="title">ONBOARDING</div>Con questo progetto imparerai
           alcune delle funzionalità avanzate del css e inizierai ad utilizzare
           javascript per far prendere vita alla web app.
@@ -15,10 +15,7 @@ function FirstPage(props) {
         <Button
           numPage={props.page}
           setPage={props.changePage}
-          animationI={props.animationI}
-          setAnimationI={props.setAnimationI}
-          animationT={props.animationT}
-          setAnimationT={props.setAnimationT}
+          onClick={props.setTraslate}
           text="Avanti"
         ></Button>
       </div>
